@@ -49,6 +49,36 @@ h1{
     background-color: #BF0D3E;
 }
 
+.dropbtn {
+    background-color: #BF0D3E;
+    color: white;
+    border: none;
+}
+
+.dropdown{
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 100px;
+    z-index: 8;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 2px;
+    text-decoration:none;
+    display:block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
 .wordcloud{
     grid-column: 2/ span 14;
     grid-row: 2;
@@ -58,15 +88,32 @@ h1{
 
 }
 
+@keyframes slide{
+    from {
+      transform: translateY(0%);
+    }  
+    to {
+      transform: translateY(20px);
+    }
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0px);
+      }
+  }
+
 .scrollfunction{
     grid-column: 7/ span 4;
     grid-row: 3;
-    height:30px;
-    background-color: #BF0D3E;
+    height:100px;
+    width: 150px;
     text-align: center;
     left: 43%;
     bottom: 5%;
     position: fixed;
+    animation: slide 0.5s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .divider{
@@ -161,7 +208,7 @@ h1{
     color: white;
     grid-column: 1/ span 4;
     grid-row: 2;
-    height: 200px;
+    height: 100%;
     padding: 50px;
 }
 
