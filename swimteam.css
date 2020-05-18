@@ -63,21 +63,38 @@ h1{
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: lightgrey;
+    background-color: #D93F07;
     min-width: 100px;
     z-index: 8;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 2px 2px;
+    padding: 10px 10px;
     text-decoration:none;
     display:block;
 }
 
-.dropdown-content a:hover {background-color: white;}
+.dropdown-content a:hover {background-color: none;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: grey;}
+
+.link {
+    background-color: #FFB81C;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+.link:hover {
+ background-color: #D93F07;
+ color: white;
+}
+
 
 .wordcloud{
     grid-column: 2/ span 14;
@@ -118,7 +135,7 @@ h1{
 
 .divider{
     background-color: white;
-    grid-column: 6/span 16;
+    grid-column: 6/span 6;
     grid-row: 4;
 }
 
@@ -134,40 +151,40 @@ h1{
 }
 
 .bodytext{
-    grid-column: 1/ span 16;
-    grid-row: 6/ span 5;
-    height: 1000px;
+    grid-column: 4/ span 10;
+    grid-row: 6;
+    height: auto;
     background-color: #D93F07;
     color: white;
+    font-size: 2em;
+    padding: 30px;
 }
 
+
 .bodytextimage1{
-    grid-column: 12/ span 5;
-    grid-row: 6;
+    grid-column: 7/ span 4;
+    grid-row: 7;
     float: right;
-    width: 100%;
+    width:520px;
     height: 300px;
-    z-index: 3;
     background-color: aqua;
 }
 
+
 .bodytextimage2{
-    grid-column: 1/ span 5;
-    grid-row: 8;
-    float: left;
-    width: 100%;
+    grid-column: 2/ span 4;
+    grid-row: 7;
+    width:520px;
     height: 300px;
-    z-index: 3;
     background-color: aqua;
 }
 
 .bodytextimage3{
-    grid-column: 12/ span 5;
-    grid-row: 10;
+    grid-column: 12/ span 4;
+    grid-row: 7;
     float: right;
-    width: 100%;
+    width:520px;
     height: 300px;
-    z-index: 3;
     background-color: aqua;
 }
 
@@ -202,6 +219,7 @@ h1{
     grid-column: 2/ span 2;
     grid-row: 1;
     height: 50px;
+    font-size: 2em;
 }
 
 .explained-text{
@@ -210,6 +228,7 @@ h1{
     grid-row: 2;
     height: 100%;
     padding: 50px;
+    font-size: 1.5em;
 }
 
 .dividerevents{
@@ -219,27 +238,28 @@ h1{
     height:75px;
 }
 
-.team-container{
-    grid-column: 2 /span 14;
-    grid-row: 2;
+.team-container1{
+    grid-column: 4 /span 10;
+    grid-row: 6;
     background-color: #D93F07;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-auto-rows: 25px;
-    height: 500px;
+    grid-auto-rows: auto;
+    height: auto;
 }
 
 .teammate1{
-    grid-column: 2/span 8;
+    grid-column: 3/span 8;
     grid-row: 3/ span 16;
     background-color: aqua;
 }
 
 .teammate1text{
-    grid-column: 11/span 9;
-    grid-row: 3/ span 13;
+    grid-column: 8/span 12;
+    grid-row: 1/ span 13;
     color: white;
     height: 100%;
+    font-size:1.5em;
 }
 
 .meetteamdivider{
@@ -248,93 +268,127 @@ h1{
     background-color: white;
     height: 50px;
 }
+.teampic1{
+    grid-column: 2 /span 14;
+    grid-row:4;
+    width: 100%;
+    height: 700px;
+}
+
+.teampic2{
+    grid-column: 2 /span 14;
+    grid-row:5;
+    width: 100%;
+    height: 700px;
+    
+}
 
 .team-container2{
-    grid-column: 2 /span 14;
-    grid-row: 4;
+    grid-column: 4 /span 10;
+    grid-row: 7;
     background-color: #D93F07;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-auto-rows: 25px;
-    height: 500px;
+    grid-auto-rows: auto;
+    height: auto;
 }
 .teammate2{
-    grid-column: 2/span 8;
-    grid-row: 3/ span 16;
+    grid-column: 3/span 8;
+    grid-row: 3/ span 13;
     background-color: aqua;
+    width:50%;
+    height: 50%;
+}
+
+.fontsize1{
+    font-size: 2em;
 }
 
 .teammate2text{
-    grid-column: 11/span 9;
-    grid-row: 3/ span 13;
+    grid-column: 8/span 12;
+    grid-row: 1/ span 13;
     color: white;
-    background-color: aqua;
     height: 100%;
+    font-size:1.5em;
 }
 
+
 .collage{
-    grid-column:3/span 12;
+    grid-column: 3/span 12;
     grid-row: 2;
-    height: 800px;
+    height: 1200px;
     width: 100%;
     border-radius: 20px;
     border-style: double;
 }
 
 .coach1{
-    grid-column:3/span 6;
-    grid-row: 3;
-    width:100%;
-    height: 100%;
+    grid-column:8/span 6;
+    grid-row: 4;
     position: relative;
+    left: 42%;
 }
 
 .coach-container{
-    grid-column: 2 /span 14;
+    grid-column: 4/span 10;
     grid-row: 2;
     background-color: #D93F07;
-    display: grid;
+    padding: 25px;
+    /*display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-auto-rows: auto;
+    grid-auto-rows: auto;*/
 }
 
 .coach1text1{
-    grid-column: 11/span 9;
-    grid-row: 3;
+    /*grid-column: 11/span 9;
+    grid-row: 3;*/
     color: white;
     height: 100%;
-    width: 100%;
+    font-size: 1.5em;
 }
 
 .coach1text2{
-    grid-column: 11/span 9;
-    grid-row: 4;
+    /*grid-column: 11/span 9;
+    grid-row: 4;*/
     color: white;
     height: 100%;
-    width: 100%;
+    font-size: 1.5em;
 }
 
 .coach1text3{
-    grid-column: 11/span 9;
-    grid-row: 5;
+    /*grid-column: 11/span 9;
+    grid-row: 5;*/
     color: white;
     height: 100%;
-    width: 100%;
+    font-size: 1.5em;
 }
 
 .coach1text4{
-    grid-column: 11/span 9;
-    grid-row: 6;
+    /*grid-column: 11/span 9;
+    grid-row: 6;*/
     color: white;
     height: 100%;
-    width: 100%;
+    font-size: 1.5em;
 }
 
 .coach1text5{
-    grid-column: 11/span 9;
-    grid-row: 7;
+    /*grid-column: 11/span 9;
+    grid-row: 7;*/
     color: white;
     height: 100%;
     width: 100%;
+    font-size: 1.5em;
 }
 
+.footer{
+    grid-column: 5/span 8;
+    grid-row: 15;
+    background-color: #BF0D3E;
+    color: white;
+    font-size: 1em;
+    height: 53px;
+}
+
+.bottom{
+    bottom:100%;
+}
